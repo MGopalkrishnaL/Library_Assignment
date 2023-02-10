@@ -29,10 +29,10 @@ public Library getdatabyid(@PathVariable String name){
     public String addLibrary(@RequestBody Library library){
     return server.addlib(library);
 }
-@DeleteMapping("/Deletelib/id")
-//    http://localhost:8080/library/Deletelib/id
-    public String deletelib(@RequestParam int id){
-    return server.deletelib(id);
+@DeleteMapping("/Deletelib")
+//    http://localhost:8080/library/Deletelib
+    public String deletelib(@RequestParam String name){
+    return server.deletelib(name);
 }
 @PutMapping("/Updatelib/name/{name}")
 //    http://localhost:8080/library/Updatelib/name/{name}
