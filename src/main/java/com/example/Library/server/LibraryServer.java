@@ -40,10 +40,10 @@ public class LibraryServer implements ILibraryServer{
         return "Library Added to Database.";
     }
     @Override
-    public String deletelib(int id){
+    public String deletelib(String name){
         for(String Id : data.keySet()){
-        if(data.containsKey(Id)){
-            data.remove(id);
+        if(data.containsKey(name)){
+            data.remove(Id);
         return "Successfully Deleted";
         }
         }
